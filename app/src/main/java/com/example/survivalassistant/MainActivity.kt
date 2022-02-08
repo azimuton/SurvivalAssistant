@@ -18,27 +18,27 @@ class MainActivity : AppCompatActivity() {
 
         nvMenuNavigationView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.clients -> {
+                R.id.orientation -> {
                     //val intent = Intent(this, ClientsActivity ::class.java)
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Клиенты", Toast.LENGTH_SHORT).show()
                 }
-                R.id.templates -> {
+                R.id.water -> {
                     Toast.makeText(this@MainActivity, "Шаблоны", Toast.LENGTH_SHORT).show()
                     //val intent = Intent(this, TamplatesActivity ::class.java)
                     startActivity(intent)
                 }
-                R.id.manual -> {
+                R.id.food -> {
                     //val intent = Intent(this, ManualActivity ::class.java)
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Справочник", Toast.LENGTH_SHORT).show()
                 }
-                R.id.about -> {
+                R.id.fire -> {
                     Toast.makeText(this@MainActivity, "О приложении", Toast.LENGTH_SHORT).show()
                     //val intent = Intent(this, AboutActivity ::class.java)
                     startActivity(intent)
                 }
-                R.id.exit -> {
+                R.id.shelter -> {
                     finishAffinity()
                     Toast.makeText(this@MainActivity, "Выход", Toast.LENGTH_SHORT).show()
 

@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">SurvivalAssistant</string>
-    <string name="header_text">МЕНЮ</string>
+    <string name="header_text">ВЫЖИВАНИЕ</string>
+    <string name="tools">Инструменты</string>
+    <string name="exit">ВЫХОД</string>
+    <string name="shelter">Укрытие</string>
+    <string name="fire">Огонь</string>
+    <string name="food">Еда</string>
+    <string name="water">Вода</string>
+    <string name="orientation">Ориентирование</string>
+    <string name="hunter">Охота</string>
+    <string name="fishing">Рыбалка</string>
+    <string name="gathering">Собирательство</string>
+    <string name="compass">Компас</string>
+    <string name="map">Карта</string>
+    <string name="note">Блокнот</string>
+    <string name="filters">Фильтры</string>
+    <string name="disinfection">Обеззараживание</string>
+    <string name="find">Поиск воды</string>
+    <string name="medical">Медицинская помощь</string>
+    <string name="tracking">Следопытство</string>
+    <string name="equipment">Снаряжение</string>
+    <string name="clothes">Одежда</string>
+    <string name="shoes">Обувь</string>
+    <string name="safety">Техника безопасности</string>
+    <string name="psychology">Психология выживания</string>
+    <string name="stopwatch">Секундомер</string>
+    <string name="timer">Таймер</string>
+    <string name="dictaphone">Диктофон</string>
+    <string name="kinds">Виды костров</string>
+    <string name="way">Способы разжигания</string>
+    <string name="kind_of_shelter">Виды укрытий</string>
+    <string name="material">Материалы</string>
 </resources>

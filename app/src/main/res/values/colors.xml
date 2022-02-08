@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="menu">#0E4710</color>
+    <color name="color_of_icon">#F12F2F</color>
+    <color name="color_of_text_drawer_menu">#478F87</color>
 </resources>

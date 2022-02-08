@@ -11,8 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/hackii"
-        tools:context=".MainActivity" >
+        android:background="@drawable/khaki"
+        tools:context=".MainActivity">
 
         <Button
             android:id="@+id/btMainMenu"
@@ -29,16 +29,18 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nvMenuNavigationView"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@drawable/khaki"
         android:clickable="true"
-        app:itemIconTint="#9E0808"
-        android:focusableInTouchMode="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:headerLayout="@layout/header"
         app:itemIconSize="30dp"
-        app:itemTextAppearance="@style/TextAppearance.AppCompat.Large"
-        app:itemTextColor="#478F87"
+        app:itemIconTint="@color/color_of_icon"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        app:itemTextColor="@color/white"
         app:menu="@menu/nav_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
 

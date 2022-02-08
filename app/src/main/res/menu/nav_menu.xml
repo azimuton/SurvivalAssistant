@@ -1,33 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <item
-        android:title="">
+
+
+    <item android:title="" >
         <menu>
             <item
-                android:id="@+id/clients"
-                android:icon="@drawable/clients"
-                android:title="Клиенты" />
+                android:id="@+id/orientation"
+                android:icon="@drawable/ic_baseline_travel_explore_24"
+                android:title="@string/orientation" />
             <item
-                android:id="@+id/templates"
-                android:title="Шаблоны" />
+                android:id="@+id/compass"
+                android:icon="@drawable/compass"
+                android:title="@string/compass" />
             <item
-                android:id="@+id/manual"
-                android:title="Справочник" />
-            <item
-                android:id="@+id/about"
-                android:title="О приложении" />
+                android:id="@+id/map"
+                android:icon="@drawable/ic_baseline_map_24"
+                android:title="@string/map" />
         </menu>
     </item>
-
-
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/water"
+                android:icon="@drawable/ic_baseline_waves_24"
+                android:title="@string/water" />
+            <item
+                android:id="@+id/filters"
+                android:icon="@drawable/filter"
+                android:title="@string/filters" />
+            <item
+                android:id="@+id/disinfection"
+                android:icon="@drawable/ic_baseline_coronavirus_24"
+                android:title="@string/disinfection" />
+            <item
+                android:id="@+id/find"
+                android:icon="@drawable/ic_baseline_mobiledata_off_24"
+                android:title="@string/find" />
+        </menu>
+    </item>
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/food"
+                android:icon="@drawable/ic_baseline_food_bank_24"
+                android:title="@string/food" />
+            <item
+                android:id="@+id/hunter"
+                android:icon="@drawable/hunt"
+                android:title="@string/hunter" />
+            <item
+                android:id="@+id/fishing"
+                android:icon="@drawable/ic_baseline_phishing_24"
+                android:title="@string/fishing" />
+            <item
+                android:id="@+id/gathering"
+                android:icon="@drawable/gathering"
+                android:title="@string/gathering" />
+        </menu>
+    </item>
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/fire"
+                android:icon="@drawable/ic_baseline_local_fire_department_24"
+                android:title="@string/fire" />
+            <item
+                android:id="@+id/kinds"
+                android:icon="@drawable/ic_baseline_fireplace_24"
+                android:title="@string/kinds" />
+            <item
+                android:id="@+id/way"
+                android:icon="@drawable/ic_baseline_front_hand_24"
+                android:title="@string/way" />
+        </menu>
+    </item>
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/shelter"
+                android:icon="@drawable/ic_baseline_cloud_24"
+                android:title="@string/shelter" />
+            <item
+                android:id="@+id/kind_of_shelter"
+                android:icon="@drawable/ic_baseline_house_siding_24"
+                android:title="@string/kind_of_shelter" />
+            <item
+                android:id="@+id/material"
+                android:icon="@drawable/ic_baseline_forest_24"
+                android:title="@string/material" />
+        </menu>
+    </item>
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/note"
+                android:icon="@drawable/ic_baseline_note_alt_24"
+                android:title="@string/note" />
+            <item
+                android:id="@+id/medical"
+                android:icon="@drawable/ic_baseline_medical_services_24"
+                android:title="@string/medical" />
+            <item
+                android:id="@+id/tracking"
+                android:icon="@drawable/ic_baseline_pets_24"
+                android:title="@string/tracking" />
+            <item
+                android:id="@+id/equipment"
+                android:icon="@drawable/ic_baseline_hiking_24"
+                android:title="@string/equipment" />
+            <item
+                android:id="@+id/clothes"
+                android:icon="@drawable/dress"
+                android:title="@string/clothes" />
+            <item
+                android:id="@+id/shoes"
+                android:icon="@drawable/shoes"
+                android:title="@string/shoes" />
+            <item
+                android:id="@+id/safety"
+                android:icon="@drawable/ic_baseline_priority_high_24"
+                android:title="@string/safety" />
+            <item
+                android:id="@+id/psychology"
+                android:icon="@drawable/ic_baseline_psychology_24"
+                android:title="@string/psychology" />
+            <item
+                android:id="@+id/stopwatch"
+                android:icon="@drawable/ic_baseline_shutter_speed_24"
+                android:title="@string/stopwatch" />
+            <item
+                android:id="@+id/timer"
+                android:icon="@drawable/ic_baseline_av_timer_24"
+                android:title="@string/timer" />
+            <item
+                android:id="@+id/dictaphone"
+                android:icon="@drawable/ic_baseline_mic_24"
+                android:title="@string/dictaphone" />
+        </menu>
+    </item>
     <item android:title="">
         <menu>
             <item
                 android:id="@+id/exit"
-                android:title="ВЫХОД" />
+                android:icon="@drawable/ic_baseline_keyboard_backspace_24"
+                android:title="@string/exit" />
         </menu>
     </item>
 
