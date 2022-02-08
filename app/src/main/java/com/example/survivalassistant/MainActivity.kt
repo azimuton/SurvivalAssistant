@@ -3,6 +3,8 @@ package com.example.survivalassistant
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.Window
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
@@ -10,6 +12,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_main)
 
         btMainMenu.setOnClickListener {
@@ -43,9 +49,23 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Выход", Toast.LENGTH_SHORT).show()
 
                 }
+                R.id.compass -> {
+                    val intent = Intent(this, CompassActivity ::class.java)
+                    startActivity(intent)
+                    //Toast.makeText(this@MainActivity, "Выход", Toast.LENGTH_SHORT).show()
+
+                }
             }
             dlDrawer.closeDrawer(GravityCompat.START)
             true
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val  w : Window = window
+        w.decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
     }
 }
