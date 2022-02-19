@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SurvivalAssistant">
         <activity
-            android:name=".CompassActivity"
+            android:name=".presentation.NoteActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.SledActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.CompassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

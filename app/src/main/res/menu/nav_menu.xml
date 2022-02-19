@@ -138,6 +138,10 @@
                 android:id="@+id/dictaphone"
                 android:icon="@drawable/ic_baseline_mic_24"
                 android:title="@string/dictaphone" />
+            <item
+                android:id="@+id/uzel"
+                android:icon="@drawable/ic_baseline_all_inclusive_24"
+                android:title="@string/uzel" />
         </menu>
     </item>
     <item android:title="">

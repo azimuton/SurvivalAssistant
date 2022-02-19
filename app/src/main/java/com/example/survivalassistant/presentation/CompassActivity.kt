@@ -1,4 +1,4 @@
-package com.example.survivalassistant
+package com.example.survivalassistant.presentation
 
 import android.content.Context
 import android.hardware.Sensor
@@ -11,12 +11,15 @@ import android.view.Window
 import android.view.animation.Animation
 import android.view.animation.RotateAnimation
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
+import com.example.survivalassistant.R
 import kotlinx.android.synthetic.main.activity_compass.*
 
 class CompassActivity : AppCompatActivity(), SensorEventListener {
 
     var manager : SensorManager? = null
     var currentDegree : Int = 0
+    lateinit var vm : MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +28,9 @@ class CompassActivity : AppCompatActivity(), SensorEventListener {
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрываем нижнюю панель навигации
                 or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY) //появляется поверх активити и исчезает
         setContentView(R.layout.activity_compass)
+
+        vm = ViewModelProvider(this)[MainViewModel::class.java]
+
         manager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
     }
 
@@ -53,35 +59,35 @@ class CompassActivity : AppCompatActivity(), SensorEventListener {
         ivCompass.startAnimation(rotateAnim)
 
         if(degree == 22){
-            tvSide.text = "NNE"
+            tvSide.text = getString(R.string.nne)
         }else if(degree == 45){
-            tvSide.text = "NE"
+            tvSide.text = getString(R.string.ne)
         }else if(degree == 67){
-            tvSide.text = "ENE"
+            tvSide.text = getString(R.string.ene)
         }else if(degree == 90){
             tvSide.text = "E"
         }else if(degree == 112){
-            tvSide.text = "ESE"
+            tvSide.text = getString(R.string.ese)
         }else if(degree == 135){
-            tvSide.text = "SE"
+            tvSide.text = getString(R.string.se)
         }else if(degree == 157){
-            tvSide.text = "SSE"
+            tvSide.text = getString(R.string.sse)
         }else if(degree == 180){
             tvSide.text = "S"
         }else if(degree == 202){
-            tvSide.text = "SSW"
+            tvSide.text = getString(R.string.ssw)
         }else if(degree == 225){
-            tvSide.text = "SW"
+            tvSide.text = getString(R.string.sw)
         }else if(degree == 247){
-            tvSide.text = "WSW"
+            tvSide.text = getString(R.string.wsw)
         }else if(degree == 270){
             tvSide.text = "W"
         }else if(degree == 292){
-            tvSide.text = "WNW"
+            tvSide.text = getString(R.string.wnw)
         }else if(degree == 315){
-            tvSide.text = "NW"
+            tvSide.text = getString(R.string.nw)
         }else if(degree == 337){
-            tvSide.text = "NNW"
+            tvSide.text = getString(R.string.nnw)
         }else if(degree == 0){
             tvSide.text = "N"
         }

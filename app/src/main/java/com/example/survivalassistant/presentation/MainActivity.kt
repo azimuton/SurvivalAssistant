@@ -1,4 +1,4 @@
-package com.example.survivalassistant
+package com.example.survivalassistant.presentation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.example.survivalassistant.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,16 +45,17 @@ class MainActivity : AppCompatActivity() {
                     //val intent = Intent(this, AboutActivity ::class.java)
                     startActivity(intent)
                 }
-                R.id.shelter -> {
-                    finishAffinity()
-                    Toast.makeText(this@MainActivity, "Выход", Toast.LENGTH_SHORT).show()
-
+                R.id.tracking -> {
+                    val intent = Intent(this, SledActivity ::class.java)
+                    startActivity(intent)
                 }
                 R.id.compass -> {
                     val intent = Intent(this, CompassActivity ::class.java)
                     startActivity(intent)
-                    //Toast.makeText(this@MainActivity, "Выход", Toast.LENGTH_SHORT).show()
-
+                }
+                R.id.note -> {
+                    val intent = Intent(this, NoteActivity ::class.java)
+                    startActivity(intent)
                 }
             }
             dlDrawer.closeDrawer(GravityCompat.START)
