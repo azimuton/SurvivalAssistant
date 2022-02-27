@@ -26,17 +26,16 @@
 
                 <TextView
                     android:id="@+id/tvNoteItemTitle"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@color/black"
                     android:gravity="center"
                     android:padding="8dp"
                     android:text="TextView"
-                    android:textColor="#8BC34A"
+                    android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold|italic"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintEnd_toStartOf="@+id/ivDeleteNoteItem"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,8 +45,6 @@
                     android:layout_height="43dp"
                     app:layout_constraintBottom_toBottomOf="@+id/tvNoteItemTitle"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.917"
-                    app:layout_constraintStart_toStartOf="@+id/tvNoteItemTitle"
                     app:layout_constraintTop_toTopOf="@+id/tvNoteItemTitle"
                     app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
 

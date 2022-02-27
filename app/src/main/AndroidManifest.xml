@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.survivalassistant">
+    package="com.jkdajac.survivalassistant">
 
     <application
         android:allowBackup="true"
@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_survival_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SurvivalAssistant">
+        <activity
+            android:name=".presentation.dictaphone.DictaphoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.stopwatch.StopwatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.TimerActivity"
+            android:exported="false" />
         <activity
             android:name=".presentation.NoteActivity"
             android:exported="false" />

@@ -10,7 +10,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.survivalassistant"
+        applicationId "com.jkdajac.survivalassistant"
         minSdk 23
         targetSdk 31
         versionCode 1
@@ -32,6 +32,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -51,4 +54,5 @@ dependencies {
 
     implementation "androidx.room:room-ktx:2.4.1"
     kapt "androidx.room:room-compiler:2.4.1"
+
 }
