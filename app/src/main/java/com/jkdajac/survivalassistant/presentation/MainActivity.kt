@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.jkdajac.survivalassistant.R
 import com.jkdajac.survivalassistant.presentation.dictaphone.DictaphoneActivity
+import com.jkdajac.survivalassistant.presentation.orientation.OrientationActivity
 import com.jkdajac.survivalassistant.presentation.stopwatch.StopwatchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -28,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         nvMenuNavigationView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.orientation -> {
-                    //val intent = Intent(this, ClientsActivity ::class.java)
+                    val intent = Intent(this, OrientationActivity ::class.java)
                     startActivity(intent)
-                    Toast.makeText(this@MainActivity, "Клиенты", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "Ориентирование", Toast.LENGTH_SHORT).show()
                 }
                 R.id.water -> {
                     Toast.makeText(this@MainActivity, "Шаблоны", Toast.LENGTH_SHORT).show()
@@ -54,22 +55,27 @@ class MainActivity : AppCompatActivity() {
                 R.id.compass -> {
                     val intent = Intent(this, CompassActivity ::class.java)
                     startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Компас", Toast.LENGTH_SHORT).show()
                 }
                 R.id.note -> {
                     val intent = Intent(this, NoteActivity ::class.java)
                     startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Блокнот", Toast.LENGTH_SHORT).show()
                 }
                 R.id.timer -> {
                     val intent = Intent(this, TimerActivity ::class.java)
                     startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Таймер", Toast.LENGTH_SHORT).show()
                 }
                 R.id.stopwatch -> {
                     val intent = Intent(this, StopwatchActivity ::class.java)
                     startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Секундомер", Toast.LENGTH_SHORT).show()
                 }
                 R.id.dictaphone -> {
                     val intent = Intent(this, DictaphoneActivity ::class.java)
                     startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Диктофон", Toast.LENGTH_SHORT).show()
                 }
             }
             dlDrawer.closeDrawer(GravityCompat.START)

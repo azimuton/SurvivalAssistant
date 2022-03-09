@@ -46,7 +46,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tvNoteItemTitle"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/tvNoteItemTitle"
-                    app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+                    app:srcCompat="@drawable/ic_baseline_delete_24" />
 
                 <TextView
                     android:id="@+id/tvNoteItemContent"

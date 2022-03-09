@@ -111,13 +111,9 @@
                 android:icon="@drawable/ic_baseline_hiking_24"
                 android:title="@string/equipment" />
             <item
-                android:id="@+id/clothes"
+                android:id="@+id/shoes_and_clothes"
                 android:icon="@drawable/dress"
-                android:title="@string/clothes" />
-            <item
-                android:id="@+id/shoes"
-                android:icon="@drawable/shoes"
-                android:title="@string/shoes" />
+                android:title="@string/clothes_and_shoes" />
             <item
                 android:id="@+id/safety"
                 android:icon="@drawable/ic_baseline_priority_high_24"
