@@ -8,9 +8,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.jkdajac.survivalassistant.R
+import com.jkdajac.survivalassistant.presentation.compass.CompassActivity
 import com.jkdajac.survivalassistant.presentation.dictaphone.DictaphoneActivity
+import com.jkdajac.survivalassistant.presentation.equipment.EquipmentActivity
+import com.jkdajac.survivalassistant.presentation.note.NoteActivity
 import com.jkdajac.survivalassistant.presentation.orientation.OrientationActivity
+import com.jkdajac.survivalassistant.presentation.shoesandclothes.ShoesAndClothesActivity
+import com.jkdajac.survivalassistant.presentation.sled.SledActivity
 import com.jkdajac.survivalassistant.presentation.stopwatch.StopwatchActivity
+import com.jkdajac.survivalassistant.presentation.timer.TimerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -61,6 +67,16 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, NoteActivity ::class.java)
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Блокнот", Toast.LENGTH_SHORT).show()
+                }
+                R.id.equipment -> {
+                    val intent = Intent(this, EquipmentActivity ::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Снаряжение", Toast.LENGTH_SHORT).show()
+                }
+                R.id.shoes_and_clothes -> {
+                    val intent = Intent(this, ShoesAndClothesActivity ::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Одежда и обувь", Toast.LENGTH_SHORT).show()
                 }
                 R.id.timer -> {
                     val intent = Intent(this, TimerActivity ::class.java)

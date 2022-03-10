@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.presentation
+package com.jkdajac.survivalassistant.presentation.timer
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -7,6 +7,7 @@ import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.jkdajac.survivalassistant.R
+import com.jkdajac.survivalassistant.presentation.MainViewModel
 import kotlinx.android.synthetic.main.activity_timer.*
 
 class TimerActivity : AppCompatActivity() {

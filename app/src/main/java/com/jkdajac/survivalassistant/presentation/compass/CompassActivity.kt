@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.presentation
+package com.jkdajac.survivalassistant.presentation.compass
 
 import android.content.Context
 import android.hardware.Sensor
@@ -13,6 +13,7 @@ import android.view.animation.RotateAnimation
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.jkdajac.survivalassistant.R
+import com.jkdajac.survivalassistant.presentation.MainViewModel
 import kotlinx.android.synthetic.main.activity_compass.*
 
 class CompassActivity : AppCompatActivity(), SensorEventListener {

@@ -21,6 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SurvivalAssistant">
         <activity
+            android:name=".presentation.equipment.EquipmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.shoesandclothes.ShoesAndClothesActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.orientation.OrientationActivity"
             android:exported="false" />
         <activity
@@ -30,16 +36,16 @@
             android:name=".presentation.stopwatch.StopwatchActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.TimerActivity"
+            android:name=".presentation.timer.TimerActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.NoteActivity"
+            android:name=".presentation.note.NoteActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.SledActivity"
+            android:name=".presentation.sled.SledActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.CompassActivity"
+            android:name=".presentation.compass.CompassActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.MainActivity"

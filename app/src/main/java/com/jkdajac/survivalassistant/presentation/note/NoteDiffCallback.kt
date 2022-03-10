@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.domain.usecase.adapter
+package com.jkdajac.survivalassistant.presentation.note
 
 import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil

@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.presentation.fragments
+package com.jkdajac.survivalassistant.presentation.note.notefragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.jkdajac.survivalassistant.R
 import com.jkdajac.survivalassistant.data.storage.AppDatabase
 import com.jkdajac.survivalassistant.data.storage.Note
-import com.jkdajac.survivalassistant.presentation.NoteActivity
+import com.jkdajac.survivalassistant.presentation.note.NoteActivity
 import kotlinx.android.synthetic.main.fragment_note.*
 
 // TODO: Rename parameter arguments, choose names that match

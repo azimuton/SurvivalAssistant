@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.presentation
+package com.jkdajac.survivalassistant.presentation.sled
 
 import android.os.Bundle
 import android.view.View

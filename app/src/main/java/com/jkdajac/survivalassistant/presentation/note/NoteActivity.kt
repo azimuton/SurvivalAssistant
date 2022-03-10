@@ -1,4 +1,4 @@
-package com.jkdajac.survivalassistant.presentation
+package com.jkdajac.survivalassistant.presentation.note
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -13,7 +13,8 @@ import com.example.survivalassistant.domain.usecase.adapter.NoteAdapter
 import com.jkdajac.survivalassistant.R
 import com.jkdajac.survivalassistant.data.storage.AppDatabase
 import com.jkdajac.survivalassistant.data.storage.Note
-import com.jkdajac.survivalassistant.presentation.fragments.NoteFragment
+import com.jkdajac.survivalassistant.presentation.MainViewModel
+import com.jkdajac.survivalassistant.presentation.note.notefragments.NoteFragment
 import kotlinx.android.synthetic.main.activity_note.*
 
 class NoteActivity : AppCompatActivity(), NoteAdapter.ViewHolder.ItemCallback {

@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.jkdajac.survivalassistant.R
 import com.jkdajac.survivalassistant.data.storage.Note
-import com.jkdajac.survivalassistant.domain.usecase.adapter.NoteDiffCallback
-import com.jkdajac.survivalassistant.presentation.NoteActivity
+import com.jkdajac.survivalassistant.presentation.note.NoteDiffCallback
+import com.jkdajac.survivalassistant.presentation.note.NoteActivity
 import kotlinx.android.synthetic.main.note_item.view.*
 
 class NoteAdapter(val contextA: Context,
