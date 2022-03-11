@@ -13,6 +13,8 @@ import com.jkdajac.survivalassistant.presentation.dictaphone.DictaphoneActivity
 import com.jkdajac.survivalassistant.presentation.equipment.EquipmentActivity
 import com.jkdajac.survivalassistant.presentation.note.NoteActivity
 import com.jkdajac.survivalassistant.presentation.orientation.OrientationActivity
+import com.jkdajac.survivalassistant.presentation.psychology.PsychologyActivity
+import com.jkdajac.survivalassistant.presentation.safety.SafetyActivity
 import com.jkdajac.survivalassistant.presentation.shoesandclothes.ShoesAndClothesActivity
 import com.jkdajac.survivalassistant.presentation.sled.SledActivity
 import com.jkdajac.survivalassistant.presentation.stopwatch.StopwatchActivity
@@ -77,6 +79,16 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, ShoesAndClothesActivity ::class.java)
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Одежда и обувь", Toast.LENGTH_SHORT).show()
+                }
+                R.id.safety -> {
+                    val intent = Intent(this, SafetyActivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Техника безопасности", Toast.LENGTH_SHORT).show()
+                }
+                R.id.psychology -> {
+                    val intent = Intent(this, PsychologyActivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this@MainActivity, "Психология выживания", Toast.LENGTH_SHORT).show()
                 }
                 R.id.timer -> {
                     val intent = Intent(this, TimerActivity ::class.java)

@@ -21,6 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SurvivalAssistant">
         <activity
+            android:name=".presentation.safety.SafetyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.psychology.PsychologyActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.equipment.EquipmentActivity"
             android:exported="false" />
         <activity
